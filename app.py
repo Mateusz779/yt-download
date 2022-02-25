@@ -9,21 +9,26 @@ if url != '':
     st.subheader('''
     {}
     ## Length: {} seconds
-    ## Rating: {} 
+    ## Rating: {}
     '''.format(yt.title , yt.length , yt.rating))
     video = yt.streams
     if len(video) > 0:
         downloaded , download_audio = False , False
-        download_video = st.button("Download Video")
+        download_video = st.button("Prepare Video")
         if yt.streams.filter(only_audio=True):
-            download_audio = st.button("Download Audio Only")
+            download_audio = st.button("Prepare Audio Only")
         if download_video:
-            video.get_lowest_resolution().download()
+            video.first().download()
             downloaded = True
+            st.subheader("Prepared Complete")
+            with open(yt.title+".mp4","rb") as file:
+               btn = st.download_button("Download file", data=file, file_name=yt.title+".mp4" , mime="video/mp4")
         if download_audio:
             video.filter(only_audio=True).first().download()
             downloaded = True
-        if downloaded:
-            st.subheader("Download Complete")
+            st.subheader("Prepared Complete")
+            with open(yt.title+".mp4","rb") as file:
+               btn = st.download_button("Download file", data=file, file_name=yt.title+".mp3", mime="audio/mpeg")
+
     else:
         st.subheader("Sorry, this video can not be downloaded")
