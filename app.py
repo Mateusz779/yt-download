@@ -1,7 +1,8 @@
 import streamlit as st
 from pytube import YouTube
-st.title("Youtube Video Donwloader") 
-st.subheader("Enter the URL:") url = st.text_input(label='URL')
+st.title("Youtube Video Donwloader")
+st.subheader("Enter the URL:")
+url = st.text_input(label='URL')
 if url != '':
     yt = YouTube(url)
     st.image(yt.thumbnail_url, width=300)
