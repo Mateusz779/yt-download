@@ -20,17 +20,18 @@ if url != '':
         if yt.streams.filter(only_audio=True):
             download_audio = st.button("Prepare Audio Only")
         if download_video:
-            video.get_highest_resolution().download(files)
+            video.get_highest_resolution().download()
             downloaded = True
             st.subheader("Prepared Complete")
-            with open(files+yt.title+".mp4","rb") as file:
+            with open(yt.title+".mp4","rb") as file:
                btn = st.download_button("Download file", data=file, file_name=yt.title+".mp4" , mime="video/mp4")
         if download_audio:
-            video.filter(only_audio=True).first().download(files)
+            video.filter(only_audio=True).first().download()
             downloaded = True
             st.subheader("Prepared Complete")
-            with open(files+yt.title+".mp4","rb") as file:
+            with open(yt.title+".mp4","rb") as file:
                btn = st.download_button("Download file", data=file, file_name=yt.title+".mp3", mime="audio/mpeg")
     else:
         st.subheader("Sorry, this video can not be downloaded")
-
+        
+    os.remove(yt.title+".mp4")
