@@ -1,0 +1,3 @@
+Contact: mailto:admin@mkedziora.pl
+Expires: 2030-12-31T11:00:00.000Z
+Preferred-Languages: en, pl
