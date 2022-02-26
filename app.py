@@ -1,8 +1,10 @@
+import os
 import streamlit as st
 from pytube import YouTube
-st.title("Youtube Video Donwloader")
+st.title("Youtube Video Downloader")
 st.subheader("Enter the URL:")
 url = st.text_input(label='URL')
+files = "/home/ubuntu/yt-download/"
 if url != '':
     yt = YouTube(url)
     st.image(yt.thumbnail_url, width=300)
@@ -18,17 +20,17 @@ if url != '':
         if yt.streams.filter(only_audio=True):
             download_audio = st.button("Prepare Audio Only")
         if download_video:
-            video.first().download()
+            video.get_highest_resolution().download(files)
             downloaded = True
             st.subheader("Prepared Complete")
-            with open(yt.title+".mp4","rb") as file:
+            with open(files+yt.title+".mp4","rb") as file:
                btn = st.download_button("Download file", data=file, file_name=yt.title+".mp4" , mime="video/mp4")
         if download_audio:
-            video.filter(only_audio=True).first().download()
+            video.filter(only_audio=True).first().download(files)
             downloaded = True
             st.subheader("Prepared Complete")
-            with open(yt.title+".mp4","rb") as file:
+            with open(files+yt.title+".mp4","rb") as file:
                btn = st.download_button("Download file", data=file, file_name=yt.title+".mp3", mime="audio/mpeg")
-
     else:
         st.subheader("Sorry, this video can not be downloaded")
+
