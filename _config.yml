@@ -1,1 +1,2 @@
 include: [".well-known"]
+X-XSS-Protection: 1
