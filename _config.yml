@@ -1,8 +1,8 @@
-include: [".well-known"]
-include: ["assets"]
-
 url: https://yt-downloader.xyz/
 
 languages: ["en"]
 exclude_from_localizations: ["CNAME", "python"]
 defaultLang: en
+
+include: [".well-known"]
+include: ["assets"]
