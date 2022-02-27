@@ -3,5 +3,5 @@ include: ["css"]
 
 url: https://yt-downloader.xyz/
 
-exclude_from_localizations: ["assets", "CNAME"]
+exclude_from_localizations: ["assets", "CNAME", "python"]
 defaultLang: en
