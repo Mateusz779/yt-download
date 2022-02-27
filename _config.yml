@@ -1,2 +1,7 @@
 include: [".well-known"]
 include: ["css"]
+
+url: https://yt-downloader.xyz/
+
+exclude_from_localizations: ["assets", "CNAME"]
+defaultLang: en
