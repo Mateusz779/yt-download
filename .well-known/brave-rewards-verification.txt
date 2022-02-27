@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: yt-downloader.xyz
+Token: 9b1cc24bfee06e452a9f69dcbfa307d4f3774ed7c90aea6e9aa62ac9729e2a2b
