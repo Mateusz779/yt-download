@@ -1,4 +1,2 @@
 include: [".well-known"]
 include: ["css"]
-X-XSS-Protection: 1
-X-Content-Type-Options: nosniff
