@@ -1,10 +1,10 @@
 include: [".well-known"]
-include: ["css"]
+include: ["assets"]
 
 url: https://yt-downloader.xyz/
 
 languages: ["en", "pl"]
-exclude_from_localizations: ["assets", "CNAME","python"]
+exclude_from_localizations: ["CNAME", "python"]
 defaultLang: en
 languageNames:
   pl: Polski
