@@ -1,6 +1,8 @@
 include: [".well-known"]
 include: ["assets"]
 
+gems: ['jekyll-multiple-languages']
+
 url: https://yt-downloader.xyz/
 
 languages: ["en", "pl"]
