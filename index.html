@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    <html lang="en">
+    <html lang="{{ site.lang }}">
     <head>
         <link rel="preconnect" href="https://api.segment.io">
         <link rel="preconnect" href="https://heapanalytics.com">
@@ -7,18 +7,18 @@
         <link rel="preconnect" href="https://cdn.heapanalytics.com">
         <link rel="preconnect" href="https://api.yt-downloader.xyz">
         <link rel="preload" href="https://api.yt-downloader.xyz/" as="document">
-        <link rel="stylesheet" href="./css/menu.css">
-        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./assets/css/menu.css">
+        <link rel="stylesheet" href="./assets/css/main.css">
         <link rel="preload" href="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1705353591973996" crossorigin="anonymous" as="script">
-        <link rel="preload" href="./js/require.js" as="script">
+        <link rel="preload" href="./assets/js/require.js" as="script">
         <link rel="preload" href="https://www.googletagmanager.com/gtag/js?id=G-05KL2SDXKE" as="script">
         
-    	  <title>Free YouTube Downloader - audio, video - MP4, MP3, Full HD</title>
+    	  <title>{% t site.title %}</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="title" content="Free YouTube Downloader - audio, video - MP4, MP3, Full HD">
-        <meta name="description" content="Free YouTube Downloader allows you to download movies and sound files from Youtube platform and more - MP4, MP3, Full HD">
-        <meta name="keywords" content="darmowy, free, youtube, yt, download, audio, video, mp3, mp4, hd, pobieranie, audio from youtube,download mp3 from youtube,downloader free video,downloader free youtube,free audio video,free mp4 video,free video for youtube,hd video,mp3 downloader,mp3 downloader free,mp3 for you,video audio,yo u tu be,you tube you tube">
+        <meta name="title" content="{% t site.title %}">
+        <meta name="description" content="{% t site.description %}">
+        <meta name="keywords" content="{% t site.keywords %}">
         <meta name="robots" content="index, follow">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="language" content="English">
@@ -27,7 +27,7 @@
         <script>
             window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
             gtag('js',new Date());gtag('config','G-05KL2SDXKE')</script>
-        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     </head>
     <body>
         <section id="home">
@@ -64,22 +64,22 @@
         <section id="about">
             <div class="container" style="position: static; float: none;"><div class="m-5"><h1 style="position: static; text-align: center;">About</h1></div><h4 style="float: none; text-align: center;">To use YT Downloader&nbsp;</h4>
                 <ul>
-                    <li>Enter the link to the desired movie (it can be shortened) in the URL field and click ENTER.</li>
-                    <li>Then select the desired format - Audio or Video.</li>
-                    <li>Wait, the application is preparing your video! </li>
-                    <li>When the file is ready, the download button will appear. </li>
+                    <li>{% t main.list.list_1 %}</li>
+                    <li>{% t main.list.list_2 %}</li>
+                    <li>{% t main.list.list_3 %}</li>
+                    <li>{% t main.list.list_4 %}</li>
                     <br>
                     <li>Enjoi!</li>
                </ul>
-               <h6>Attention!<br>
-                If the screen is white for a long time or says "please wait", please refresh the page. If the problem persists for a long time please report it:</h6><a href="mailto:admin@mkedziora.pl">admin@mkedziora.pl</a>
+               <h6>{% t main.list.attention %}<br>
+                {% t main.list.help %}:</h6><a href="mailto:admin@mkedziora.pl">admin@mkedziora.pl</a>
             </div>
         </section>
         <footer class=" text-center ">
           <div class="container p-4">
             <section class="mb-4">
               <p>
-                  YT Downloader allows you to download movies and audio from the Youtube platform. <br>
+                {% t site.description %} <br>
                   <a href="https://icons8.com/icon/53419/internet" style="font-size:12px;" rel=”nofollow”>Internet icon by Icons8</a>
               </p>
             </section>
