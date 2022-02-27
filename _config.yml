@@ -4,5 +4,5 @@ languages: ["en"]
 exclude_from_localizations: ["CNAME", "python"]
 defaultLang: en
 
-
+include: [".well-known"]
 include: ["assets"]
