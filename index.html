@@ -15,7 +15,6 @@
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script src="./js/require.js"></script>
-        <script src="./js/menu.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-05KL2SDXKE"></script>
 <script>
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
@@ -26,12 +25,35 @@ gtag('js',new Date());gtag('config','G-05KL2SDXKE')</script>
         <link rel="stylesheet" href="./css/main.css">
     </head>
     <body>
-        <nav id='menu'>
-  <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
-  <ul>
-    <li><a href='https://yt-downloader.xyz/'>Home</a></li>
-    <li><a href='https://yt-downloader.xyz/'>About</a></li>
-  </ul>
+<nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <!-- logo -->
+  <a href="#" class="menu-logo">
+    <img src="https://yt-downloader.xyz/favicon.ico" alt="Yt Downloader"/>
+  </a>
+
+  <!-- menu items -->
+  <div class="menu">
+    <ul>
+    </ul>
+    <ul>
+      <li>
+        <a href="#home">
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="#about">
+          About
+        </a>
+      </li>
+    </ul>
+  </div>
 </nav>
         <object type="text/html" data="https://api.yt-downloader.xyz/" width="100%" height="100%" aria-label="Free YouTube Downloader"></object>
         
