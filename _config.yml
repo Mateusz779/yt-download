@@ -1,13 +1,8 @@
 include: [".well-known"]
 include: ["assets"]
 
-gems: ['jekyll-multiple-languages']
-
 url: https://yt-downloader.xyz/
 
-languages: ["en", "pl"]
+languages: ["en"]
 exclude_from_localizations: ["CNAME", "python"]
 defaultLang: en
-languageNames:
-  pl: Polski
-  en: English
