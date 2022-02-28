@@ -32,6 +32,13 @@
 <meta property=twitter:title content="Free YouTube Downloader - audio, video - MP4, MP3, Full HD, 4K"/>
 <meta property=twitter:description content="Download YouTube videos for free, in MP4 and MP3 format. Convert to Full HD, 4K and 2K quality. Be sure to fully enjoy the music and video clips from YouTube."/>
 <meta property=twitter:image content="favicon.ico"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>  
+$(function(){ 
+  $("#nav_a").load("./assets/html/nav.html");
+  $("#footer").load("./assets/html/footer.html");  
+}); 
+</script>  
 <link rel=stylesheet href=./assets/css/main.css>
 <link rel=stylesheet href=./assets/css/bootstrap.min.css>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","G-05KL2SDXKE");</script>
@@ -39,36 +46,7 @@
 <body>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHM95H3" height=0 width=0 style=display:none;visibility:hidden></iframe></noscript>
 <section id=how>
-<nav class=menu-container>
-<input type=checkbox aria-label="Toggle menu" />
-<span></span>
-<span></span>
-<span></span>
-<a href=# class=menu-logo>
-<img src=https://yt-downloader.xyz/favicon.ico alt="Yt Downloader" style=object-fit:contain height=32px width="32px"/>
-</a>
-<div class=menu>
-<ul>
-</ul>
-<ul>
-<li>
-<a href=#home>
-Home
-</a>
-</li>
-<li>
-<a href=#about>
-About
-</a>
-</li>
-<li>
-<a href=#how>
-How To Use
-</a>
-</li>
-</ul>
-</div>
-</nav>
+<nav id="nav_a"></nav>
 <div class=container style=position:static;float:none><div class=m-5><h1 style=position:static;text-align:center>How to use YT Downloader</h1></div>
 <ul>
 <li>Enter the link to the desired movie (it can be shortened) in the URL field and click ENTER.</li>
@@ -85,11 +63,11 @@ How To Use
 <section id=home>
 <div class="container-fluid Default" style=text-decoration-line:none;position:relative;display:block;margin-right:0;height:auto;overflow:auto><div class=m-5 style=display:block;position:relative;top:auto;float:none;width:auto;height:auto;opacity:1;text-align:center;min-width:auto;min-height:auto;object-fit:fill>
 <object type=text/html data=https://api.yt-downloader.xyz/ style=object-fit:fill;width:100%;height:100vh aria-label="Free YouTube Downloader"></object>
-</div></div><div class=container> <div class=m-5></div></div>
+</div></div>
 </section>
-<footer class=text-center>
-<div class="container p-4">
 <section class=mb-4 id=about>
+<div class=container style="text-align: center;"> <div class=m-5>
+<div class="container p-4">
 <h2>What is a free YouTube downloader?</h2>
 <p>A free YouTube downloader is a tool that helps you download videos from YouTube to your computer. It works by converting the video into an MP4, MP3, or other video format. It is important to note that this can be done in bulk: all you have to do is upload all of the videos that you want to download and then choose which format you want them in. This saves a lot of time and effort as it eliminates the need for conversion one by one.</p>
 <h3>Why should I choose this free YouTube downloader?</h3>
@@ -109,14 +87,10 @@ Another reason is that YouTube offers a streaming service so there's no need for
 <li>It has an easy to use interface</li>
 </ul>
 <p><a href=https://icons8.com/icon/53419/internet style=font-size:12px rel=”nofollow”>Internet icon by Icons8</a></p>
+</div>
+</div>
+</div>
 </section>
-</div>
-<div class="text-center p-3" style=background-color:rgba(0,0,0,0.2)>
-© 2022 Copyright:
-<a class=text-dark href=https://yt-downloader.xyz>yt-downloader.xyz</a><br>
-<a class=text-dark href=https://mkedziora.pl>Author: Mateusz Kędziora</a><br>
-<a class=text-dark href=mailto:admin@mkedziora.pl>admin@mkedziora.pl</a>
-</div>
-</footer>
+<footer id="footer"></footer> 
 </body>
 </html>
