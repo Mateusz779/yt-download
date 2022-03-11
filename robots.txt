@@ -1,3 +1,2 @@
 User-agent: *
 Sitemap: https://yt-downloader.xyz/sitemap.xml
-Disallow: /assets/
